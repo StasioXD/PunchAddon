@@ -1,0 +1,13 @@
+name: PunchAddon
+version: '${project.version}'
+main: st.stasio.punchaddon.PunchAddon
+api-version: '1.17'
+authors:
+  - stasio
+commands:
+  punchreload:
+    description: blabla
+permissions:
+  frog.reload:
+    description: Allows the player to reload the FrogAddon configuration.
+    default: op

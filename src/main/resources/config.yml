@@ -1,0 +1,23 @@
+punch:
+  # permission to use the punch in lobby
+  permission: "punch.use"
+  # worlds where the punch will work
+  worlds:
+    - "uhc_lobby"
+  # cooldown for punch
+  cooldown: 15
+
+  messages:
+    # broadcast when someone punch someone
+    # {damaged} - punched player
+    # {damager} - player that punched
+    punch: "&a&lFROG &7» &b{damaged} &fgot punched by &c{damager}"
+    # message when player has cooldown
+    cooldown: "&cYou can punch again in {cooldown} seconds."
+  particle:
+    # particles 1.17+ https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+    type: "VILLAGER_HAPPY"
+  # how high player will be punched - its a ratio not blocks
+  height: 3.0
+  # sound when player gets punched 1.17+ https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  sound: "ENTITY_GENERIC_EXPLODE"
